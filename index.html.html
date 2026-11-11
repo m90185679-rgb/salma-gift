@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11/11 - ذكرياتنا الخاصة ❤️</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #1a0026;
+            color: #fff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            min-height: 100vh;
+            padding: 30px 15px;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        /* مطر الإيموجيات */
+        .emoji-rain {
+            position: fixed;
+            top: -40px;
+            user-select: none;
+            pointer-events: none;
+            z-index: 1;
+            animation: fall linear infinite;
+        }
+
+        @keyframes fall {
+            0% {
+                transform: translateY(0) rotate(0deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(105vh) rotate(360deg);
+                opacity: 0.2;
+            }
+        }
+
+        .header-content {
+            position: relative;
+            z-index: 5;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            color: #ff4d88;
+            text-shadow: 0 0 15px rgba(255, 77, 136, 0.6);
+            margin-bottom: 8px;
+        }
+
+        .date-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 6px 24px;
+            border-radius: 20px;
+            color: #ffd700;
+            font-size: 1.2rem;
+            border: 1px solid rgba(255, 215, 0, 0.4);
+        }
+
+        /* شبكة الصور الـ 10 المبعثرة */
+        .scattered-gallery {
+            position: relative;
+            z-index: 5;
+            max-width: 1000px;
+            margin: 0 auto 40px auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .photo-card {
+            border-radius: 15px;
+            border: 3px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+            background: rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            object-fit: cover;
+        }
+
+        .photo-card:hover {
+            transform: scale(1.1) rotate(0deg) !important;
+            border-color: #ff4d88;
+            z-index: 10;
+            box-shadow: 0 12px 25px rgba(255, 77, 136, 0.6);
+        }
+
+        /* أبعاد وزوايا الـ 10 صور */
+        .img-1 { width: 130px; height: 180px; transform: rotate(-5deg); }
+        .img-2 { width: 190px; height: 140px; transform: rotate(4deg); }
+        .img-3 { width: 150px; height: 200px; transform: rotate(-3deg); }
+        .img-4 { width: 120px; height: 160px; transform: rotate(6deg); }
+        .img-5 { width: 200px; height: 150px; transform: rotate(-4deg); }
+        .img-6 { width: 140px; height: 190px; transform: rotate(5deg); }
+        .img-7 { width: 170px; height: 130px; transform: rotate(-7deg); }
+        .img-8 { width: 130px; height: 170px; transform: rotate(3deg); }
+        .img-9 { width: 180px; height: 200px; transform: rotate(-4deg); }
+        .img-10 { width: 150px; height: 150px; transform: rotate(5deg); }
+
+        /* منطقة المفاجأة والرسالة */
+        .surprise-area {
+            position: relative;
+            z-index: 5;
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .surprise-btn {
+            background: linear-gradient(45deg, #ff0066, #ff6699);
+            color: white;
+            font-size: 1.3rem;
+            font-weight: bold;
+            padding: 15px 35px;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            box-shadow: 0 0 20px rgba(255, 0, 102, 0.6);
+            transition: transform 0.3s ease;
+            margin-bottom: 25px;
+        }
+
+        .surprise-btn:hover {
+            transform: scale(1.08);
+        }
+
+        .message-card {
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 20px;
+            padding: 30px;
+            line-height: 2;
+            font-size: 1.25rem;
+            color: #ffe6f0;
+            display: none;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header-content">
+        <h1>إلى أرق وأغلى سلمى في الدنيا ❤️</h1>
+        <div class="date-badge">✨ 11 / 11 ✨</div>
+    </div>
+
+    <!-- 10 خانات صور مبعثرة -->
+    <div class="scattered-gallery">
+        <img class="photo-card img-1" src="img1.jpg.jpg" alt="📸 1">
+        <img class="photo-card img-2" src="img2.jpg.jpg" alt="📸 2">
+        <img class="photo-card img-3" src="img3.jpg.jpg" alt="📸 3">
+        <img class="photo-card img-4" src="img4.jpg.jpg" alt="📸 4">
+        <img class="photo-card img-5" src="img5.jpg.jpg" alt="📸 5">
+        <img class="photo-card img-6" src="img6.jpg.jpg" alt="📸 6">
+        <img class="photo-card img-7" src="img7.jpg.jpg" alt="📸 7">
+        <img class="photo-card img-8" src="img8.jpg.jpg" alt="📸 8">
+        <img class="photo-card img-9" src="img9.jpg.jpg" alt="📸 9">
+        <img class="photo-card img-10" src="img10.jpg.jpg" alt="📸 10">
+    </div>
+
+    <!-- زر المفاجأة والرسالة -->
+    <div class="surprise-area">
+        <button class="surprise-btn" id="btn">خشي دوسي هنا فيه مفاجأة 🎁</button>
+
+        <div class="message-card" id="secretMessage">
+            <h2 style="color: #ff6699; margin-bottom: 20px; text-align: center;">💖 رسالتي ليكي يا سماسيمو 💖</h2>
+            <p>
+                بمناسبة إن النهارده يوم 11 شهر 11، هو مش مجرد يوم في السنة، ده يوم مميز بالنسبة لي علشان دايماً بفتكر قد إيه وجودك مهم في حياتي بالفرحة والحب.
+            </p>
+            <br>
+            <p>
+                كل ضحكة منك، كل كلمة، كل لمسة، وكل نظرة بتغير يومي دايماً للأحسن، علشان أنتي يا سلمى السند والداعم ليا في كل الأوقات، وشغفي إني أكمل في حياتي.
+            </p>
+            <br>
+            <p>
+                آه هتعب دلوقتي، بس قدام لما أبقى معاكي كل التعب ده هيروح مع أول حضن لينا مع بعض في بيتنا ونعمل أحلى ذكريات سوا مع عيالنا.
+            </p>
+            <br>
+            <p>
+                بتمنى من أعماق قلبي يا سلمى إننا نكمل ونفضل دايماً مع بعض ونحقق كل أحلامنا سوا، وتفضلي دايماً منورة حياتي يا سماسيمو.
+            </p>
+            <br>
+            <h3 style="color: #ff4d88; text-align: center; font-size: 1.5rem; margin-top: 10px;">بحبك يا سلمى ❤️🫂</h3>
+        </div>
+    </div>
+
+    <script>
+        // 1. تساقط الإيموجيات
+        const emojis = ['🌹', '❤️', '💖', '🌸', '✨', '💕', '🌷'];
+
+        function createEmoji() {
+            const emoji = document.createElement('div');
+            emoji.className = 'emoji-rain';
+            emoji.innerText = emojis[Math.floor(Math.random() * emojis.length)];
+            emoji.style.left = Math.random() * 95 + 'vw';
+            emoji.style.animationDuration = (Math.random() * 3 + 2) + 's';
+            emoji.style.fontSize = (Math.random() * 15 + 18) + 'px';
+            document.body.appendChild(emoji);
+
+            setTimeout(() => {
+                emoji.remove();
+            }, 5000);
+        }
+
+        setInterval(createEmoji, 250);
+
+        // 2. ظهور المفاجأة
+        const btn = document.getElementById('btn');
+        const message = document.getElementById('secretMessage');
+
+        btn.onclick = function() {
+            message.style.display = 'block';
+            message.scrollIntoView({ behavior: 'smooth' });
+        };
+    </script>
+</body>
+</html>
